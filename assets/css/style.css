@@ -155,7 +155,18 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--smoky-black); }
+body {
+  background: var(--smoky-black);
+  color: var(--white-2);
+}
+
+
+main,
+.sidebar,
+article {
+  position: relative;
+  z-index: 1;
+}
 
 
 
@@ -167,8 +178,8 @@ body { background: var(--smoky-black); }
 
 .sidebar,
 article {
-  background: var(--eerie-black-2);
-  border: 1px solid var(--jet);
+  background: #2b2b2b;
+  border: 1px solid #3a3a3a;
   border-radius: 20px;
   padding: 15px;
   box-shadow: var(--shadow-1);
@@ -192,7 +203,7 @@ article {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  color: var(--orange-yellow-crayola);
+  color: var(--light-gray);
   box-shadow: var(--shadow-1);
   z-index: 1;
 }
@@ -201,12 +212,34 @@ article {
   content: "";
   position: absolute;
   inset: 1px;
-  background: var(--eerie-black-1);
+  background: #232323;
   border-radius: inherit;
   z-index: -1;
 }
 
 .icon-box ion-icon { --ionicon-stroke-width: 35px; }
+
+
+.icon-email { color: #4da3ff; }
+.icon-phone { color: #27c07d; }
+.icon-birthday { color: #ffb84d; }
+.icon-location { color: #ff6b6b; }
+
+.service-icon-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-icon-box ion-icon { font-size: 24px; }
+
+.icon-frontend { color: #5ad0ff; }
+.icon-flutter { color: #00c2ff; }
+.icon-devops { color: #a78bfa; }
+.icon-photo { color: #ff9f43; }
 
 article { display: none; }
 
@@ -362,6 +395,28 @@ main {
   padding: 3px 12px;
   border-radius: 8px;
 }
+
+.profile-links {
+  margin-top: 10px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.profile-links a {
+  width: max-content;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  transition: transform var(--transition-1);
+}
+
+.profile-links a:hover,
+.profile-links a:focus { transform: translateY(-1px); }
+
+.profile-links .github-link { color: #ffffff; }
+.profile-links .linkedin-link { color: #0a66c2; }
 
 .info_more-btn {
   position: absolute;
@@ -551,7 +606,7 @@ main {
 
 .service-icon-box { margin-bottom: 10px; }
 
-.service-icon-box img { margin: auto; }
+.service-icon-box img { margin: auto; filter: hue-rotate(160deg) saturate(1.8); }
 
 .service-content-box { text-align: center; }
 
