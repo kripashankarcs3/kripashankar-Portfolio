@@ -10,7 +10,7 @@ It showcases my skills, projects, and basic information in a clean and responsiv
 - JavaScript
 
 ## Live Website
-👉 https://kripashankarc3.github.io/kripashankar-Portfolio/
+👉[ https://kripashankarc3.github.io/kripashankar-Portfolio/](https://kripashankarcs3.github.io/kripashankar-Portfolio/)
 
 ## About
 This portfolio is customized to reflect my personal work and learning journey in web development.
